@@ -29,6 +29,8 @@
     return  _fur;
 }
 
-
+- (NSString *)description {
+    return _name;
+}
 
 @end

@@ -10,4 +10,27 @@
 
 @implementation Marsupial
 
+- (instancetype)initWithName:(NSString *)name
+                         fur:(NSString *)fur
+                       pouch:(NSString *)pouch {
+    self = [super initWithName:name
+                           fur:fur];
+    if (self) {
+        _pouch = pouch;
+    }
+    return self;
+}
+
+- (instancetype)initWithName:(NSString *)name
+                         fur:(NSString *)fur {
+    return [self initWithName:name
+                          fur:fur
+                        pouch:@"Unknown"];
+}
+
+- (NSString *)pouch {
+    return  _pouch;
+}
+
+
 @end

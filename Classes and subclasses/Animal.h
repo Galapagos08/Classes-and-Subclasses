@@ -10,6 +10,7 @@
 
 @interface Animal : NSObject {
     NSString *_name;
+    BOOL _living;
 }
 
 - (instancetype)initWithName:(NSString *)name NS_DESIGNATED_INITIALIZER;

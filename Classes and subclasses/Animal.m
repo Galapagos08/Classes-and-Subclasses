@@ -11,7 +11,7 @@
 @implementation Animal
 
 - (instancetype)init {
-    return [self initWithName:@"Unnamed"];
+    return [self initWithName:@"Unknown"];
 }
 
 - (instancetype)initWithName:(NSString *)name {
