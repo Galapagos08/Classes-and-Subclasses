@@ -17,6 +17,8 @@
 
 - (NSString *)name;
 
+- (BOOL)living;
+
 
 
 @end

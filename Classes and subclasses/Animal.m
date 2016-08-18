@@ -26,6 +26,10 @@
     return _name;
 }
 
+- (BOOL)living {
+    return YES;
+}
+
 - (NSString *)description {
     return _name;
 }

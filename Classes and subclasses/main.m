@@ -19,11 +19,18 @@ int main(int argc, const char * argv[]) {
     };
     
     @autoreleasepool {
-        Mammal *Animal = [[Mammal alloc] initWithName:@"Kangaroo"
-                                                  fur:@"coarse"];
+        Mammal *Animal = [[Mammal alloc] initWithName:@"Wolf"
+                                                  fur:@"coarse on the outside with a soft underlayer"];
         
-        NSLog(@"\n\nI am a %@.", Animal);
-        NSLog(@"\n\nI have %@ fur.", [Animal fur]);
+        NSLog(@"\n\nI am a %@ and I have fur that is %@.", Animal, [Animal fur]);
+    }
+    
+    @autoreleasepool {
+        Marsupial *Animal = [[Marsupial alloc] initWithName:@"Kangaroo"
+                                                        fur:@"soft"
+                                                      pouch:@"pouch"];
+        
+        NSLog(@"\n\nI am a %@ and I have %@ fur but my most distinctive feature is my %@.", Animal, [Animal fur], [Animal pouch]);
     }
     return 0;
 }
